@@ -2,10 +2,29 @@
   "name": "@voidvoxel/callable",
   "version": "0.0.0",
   "description": "Make anything callable like a function. Includes function and method utilities.",
-  "main": "src/index.js",
+  "main": "dist/callable.mjs",
+  "type": "module",
   "scripts": {
-    "build": "npm run build-types",
-    "build-types": "tsc src/**.js --declaration --allowJs --emitDeclarationOnly --outDir types",
+    "build": "npm run build:all",
+    "build:all": " npm run build:docs && npm run build:common && npm run build:web",
+    "build:common": "tsc",
+    "build:docs": "npm run clean:docs && npm run build:docs:html && npm run build:docs:md",
+    "build:docs:html": "typedoc src/index.ts --out docs/html",
+    "build:docs:md": "typedoc src/index.ts --plugin typedoc-plugin-markdown --out docs/md && concat-md --decrease-title-levels --dir-name-as-title docs > docs/README.md",
+    "build:web": "npm run build:web:script && npm run build:web:module",
+    "build:web:module": "node scripts/build/web/module.mjs && npm run bundle:web:module",
+    "build:web:script": "npm run bundle:web:script",
+    "bundle:web:module": "./node_modules/.bin/esbuild build/index.js --bundle --format=esm --outfile=dist/callable.mjs && npm run minify:web:module",
+    "bundle:web:script": "./node_modules/.bin/esbuild build/browser.js --bundle --format=iife --outfile=dist/callable.js && npm run minify:web:script",
+    "clean": "node scripts/clean.mjs",
+    "clean:build": "node scripts/clean/build.mjs",
+    "clean:dist": "node scripts/clean/dist.mjs",
+    "clean:docs": "node scripts/clean/docs.mjs",
+    "rebuild": "npm run rebuild:all",
+    "rebuild:all": " npm run clean:build && npm run clean:dist && npm run build:common && npm run build:web",
+    "minify:web:module": "uglifyjs dist/callable.mjs --compress --mangle --module -o dist/callable.min.mjs",
+    "minify:web:script": "uglifyjs dist/callable.js --compress --mangle -o dist/callable.min.js",
+    "preinstall": "npm run build",
     "test": "jest"
   },
   "keywords": [
@@ -22,11 +41,16 @@
   "author": "Ashlynne Juniper",
   "license": "MPL-2.0",
   "dependencies": {
-    "@voidvoxel/parse-function": "^0.5.4",
     "nearley": "github:voidvoxel/nearley#hotfix/648-xss-vulnerability-fix"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "typescript": "^5.4.5"
+    "concat-md": "^0.5.1",
+    "esbuild": "0.21.2",
+    "glob": "^10.3.15",
+    "pathify": "github:voidvoxel/pathify",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^4.0.1",
+    "typescript": "^5.4.5",
+    "uglify-js": "^3.17.4"
   }
 }

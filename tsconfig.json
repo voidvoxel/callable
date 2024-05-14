@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "lib": [
+            "Decorators",
+            "ES2015"
+        ],
+        "module": "ES6",
+        "noImplicitAny": true,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "outDir": "build",
+        "sourceMap": true,
+        "target": "ES6"
+    },
+    "include": [
+        "src/**.ts"
+    ],
+    "exclude": [
+        "**/*.spec.ts"
+    ]
+}

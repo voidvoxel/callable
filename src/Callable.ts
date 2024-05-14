@@ -1,24 +1,32 @@
-/**
- * The options to pass to `Callable`'s constructor.
- *
- * @typedef {Object} CallableOptions
- *
- * @property {string | null} name
- * The function name of the `Callable`.
- */
+import CallableOptions from "./CallableOptions";
+import DecoratorDescriptor from "./DecoratorDescriptor";
+import FunctionDecorator from "./FunctionDecorator";
+
+
+const DEFAULT_CALLABLE_OPTIONS: CallableOptions = {
+    name: null
+};
 
 
 /**
  * Apply `CallableOptions` to a `Callable` instance.
  *
- * @param {Callable | Function} callable
+ * @param {Function} callable
  * @param {*} options
  */
 function applyFunctionOptions (
-    callable,
-    options = {}
+    callable: Function,
+    options: CallableOptions | null = null
 ) {
-    options ??= {};
+    options ??= ({} as CallableOptions);
+
+    options = Object.assign(
+        {},
+        DEFAULT_CALLABLE_OPTIONS,
+        options
+    );
+
+    options.name ??= DEFAULT_CALLABLE_OPTIONS.name;
 
     const name = options.name ?? null;
 
@@ -41,7 +49,7 @@ function applyFunctionOptions (
  * @since v1.0.0
  * @version 1.0.0
  */
-class Callable extends Function {
+export default class Callable extends Function {
     /**
      * Decorate a `Function`.
      *
@@ -52,16 +60,16 @@ class Callable extends Function {
      *
      * @param {Function} callable
      * The `Function` to decorate.
-     * @param {IDecorator} decorator
+     * @param {FunctionDecorator} decorator
      * The decorator to decorate the `Function` with.
      * @returns {Function}
      * The decorated `Function`.
      */
-    static decorate (
-        callable,
-        decorator
+    public static decorate (
+        callable: Function,
+        decorator: FunctionDecorator
     ) {
-        const descriptor = {
+        const descriptor: DecoratorDescriptor = {
             key: callable.name,
             value: callable
         };
@@ -94,17 +102,19 @@ class Callable extends Function {
      * @since v1.0.0
      * @version 1.0.0
      *
-     * @param {Function} method
-     * The `Function` to decorate.
-     * @param {IDecorator} decorator
-     * The decorator to decorate the `Function` with.
+     * @param {any} target
+     * The target object containing the method to decorate.
+     * @param {string} key
+     * The key of the method to decorate.
+     * @param {FunctionDecorator} decorator
+     * The decorator to decorate the method with.
      * @returns {Function}
-     * The decorated `Function`.
+     * The decorated method.
      */
-    static decorateMethod (
-        target,
-        key,
-        decorator
+    public static decorateMethod (
+        target: any,
+        key: string,
+        decorator: MethodDecorator
     ) {
         const method = target.prototype[key];
 
@@ -152,9 +162,9 @@ class Callable extends Function {
      * The new name of the `Callable`.
      * @returns
      */
-    static rename (
-        callable,
-        name
+    public static rename (
+        callable: Function,
+        name: string
     ) {
         if (name) {
             Object.defineProperty(
@@ -179,16 +189,20 @@ class Callable extends Function {
      * @since v1.0.0
      * @version 1.0.0
      *
-     * @param {Function} method
-     * The `Callable` to rename.
-     * @param {string} name
-     * The new name of the `Callable`.
+     * @param {any} target
+     * The target object containing the method to decorate.
+     * @param {string} currentKey
+     * The current key/name of the method..
+     * @param {string} newKey
+     * The new key/name of the method.
+     * @returns {Function}
+     * The renamed method.
      * @returns
      */
-    static renameMethod (
-        target,
-        currentKey,
-        newKey
+    public static renameMethod (
+        target: any,
+        currentKey: string,
+        newKey: string
     ) {
         if (newKey) {
             const method = Callable.rename(
@@ -221,14 +235,16 @@ class Callable extends Function {
      *
      * @param {Function} callable
      * The `Callable` or `Function` to modify.
-     * @param {*} options
+     * @param {CallableOptions | null} options
      * The options to apply to the `Callable`.
      * @returns {Callable}
      */
-    constructor (
-        callable,
-        options = {}
+    public constructor (
+        callable: Function,
+        options: CallableOptions | null = null
     ) {
+        super();
+
         applyFunctionOptions(
             callable,
             options
@@ -240,6 +256,3 @@ class Callable extends Function {
         );
     }
 }
-
-
-module.exports = Callable;
