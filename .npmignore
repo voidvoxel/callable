@@ -1,0 +1,34 @@
+# Build output
+build/
+
+# Distribution
+dist/
+
+# Documentation
+docs/
+
+# Examples
+examples/
+
+# Dependencies
+node_modules/
+
+# Scripts
+scripts/
+
+# Source code
+src/
+
+# Tests
+tests/
+
+# Git
+.gitattributes
+.gitignore
+
+# npm
+.npmignore
+*callable-*.tgz
+
+# TypeScript compiler
+tsconfig.json
