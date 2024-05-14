@@ -1,0 +1,32 @@
+{
+  "name": "@voidvoxel/callable",
+  "version": "0.0.0",
+  "description": "Make anything callable like a function. Includes function and method utilities.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run build-types",
+    "build-types": "tsc src/**.js --declaration --allowJs --emitDeclarationOnly --outDir types",
+    "test": "jest"
+  },
+  "keywords": [
+    "callable",
+    "objects",
+    "extensible",
+    "functions",
+    "javascript",
+    "typescript",
+    "ecmascript",
+    "js",
+    "ts"
+  ],
+  "author": "Ashlynne Juniper",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@voidvoxel/parse-function": "^0.5.4",
+    "nearley": "github:voidvoxel/nearley#hotfix/648-xss-vulnerability-fix"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "typescript": "^5.4.5"
+  }
+}
