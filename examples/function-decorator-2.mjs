@@ -1,4 +1,4 @@
-const Callable = require("../src/classes/Callable");
+import { Callable } from "../dist/callable.mjs";
 
 
 const decorateFunction = Callable.decorate;

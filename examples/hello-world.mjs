@@ -1,4 +1,4 @@
-const Callable = require("../src");
+import { Callable } from "../dist/callable.mjs";
 
 
 class HelloWorld extends Callable {

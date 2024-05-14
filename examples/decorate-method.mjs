@@ -1,4 +1,4 @@
-const Callable = require("../dist");
+import { Callable } from "../dist/callable.mjs";
 
 
 function hashString (string) {

@@ -1,4 +1,4 @@
-const Callable = require("../src");
+import { Callable } from "../dist/callable.mjs";
 
 
 function log(target, key, descriptor) {
