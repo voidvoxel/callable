@@ -24,7 +24,7 @@
     "rebuild:all": " npm run clean:build && npm run clean:dist && npm run build:common && npm run build:web",
     "minify:web:module": "uglifyjs dist/callable.mjs --compress --mangle --module -o dist/callable.min.mjs",
     "minify:web:script": "uglifyjs dist/callable.js --compress --mangle -o dist/callable.min.js",
-    "preinstall": "npm run build",
+    "prepublish": "npm run build",
     "test": "jest"
   },
   "keywords": [
