@@ -1,6 +1,6 @@
 {
   "name": "@voidvoxel/callable",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Make anything callable like a function. Includes function and method utilities.",
   "main": "dist/callable.mjs",
   "type": "module",
