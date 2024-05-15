@@ -18,4 +18,4 @@ The function name of the `Callable`.
 
 #### Source
 
-[src/CallableOptions.ts:10](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/CallableOptions.ts#L10)
+[src/CallableOptions.ts:10](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/CallableOptions.ts#L10)
