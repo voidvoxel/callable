@@ -14,7 +14,7 @@
 
 #### Source
 
-[src/DecoratorDescriptor.ts:2](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/DecoratorDescriptor.ts#L2)
+[src/DecoratorDescriptor.ts:2](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/DecoratorDescriptor.ts#L2)
 
 ***
 
@@ -24,4 +24,4 @@
 
 #### Source
 
-[src/DecoratorDescriptor.ts:3](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/DecoratorDescriptor.ts#L3)
+[src/DecoratorDescriptor.ts:3](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/DecoratorDescriptor.ts#L3)

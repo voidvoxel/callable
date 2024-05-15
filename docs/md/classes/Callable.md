@@ -57,7 +57,7 @@ v1.0.0
 
 #### Source
 
-[src/Callable.ts:242](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/Callable.ts#L242)
+[src/Callable.ts:242](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/Callable.ts#L242)
 
 ## Properties
 
@@ -312,7 +312,7 @@ v1.0.0
 
 #### Source
 
-[src/Callable.ts:68](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/Callable.ts#L68)
+[src/Callable.ts:68](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/Callable.ts#L68)
 
 ***
 
@@ -354,7 +354,7 @@ v1.0.0
 
 #### Source
 
-[src/Callable.ts:114](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/Callable.ts#L114)
+[src/Callable.ts:114](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/Callable.ts#L114)
 
 ***
 
@@ -390,7 +390,7 @@ v1.0.0
 
 #### Source
 
-[src/Callable.ts:165](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/Callable.ts#L165)
+[src/Callable.ts:165](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/Callable.ts#L165)
 
 ***
 
@@ -432,4 +432,4 @@ v1.0.0
 
 #### Source
 
-[src/Callable.ts:202](https://github.com/voidvoxel/callable/blob/247b40888981840a26a2e548986b74b6005d0f17/src/Callable.ts#L202)
+[src/Callable.ts:202](https://github.com/voidvoxel/callable/blob/b91302117ec03c46737b02ea3e5247dcb76bfc14/src/Callable.ts#L202)

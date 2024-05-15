@@ -6,14 +6,16 @@
 
 ## Installation
 
-```js
+```sh
 npm i @voidvoxel/callable
 ```
 
 ## Documentation
 
-Please refer to [the `docs` directory](docs/).
+* the [`docs`](docs/) directory
+* [voidvoxel.github.io](https://voidvoxel.github.io/docs/@voidvoxel/callable)
 
 ## Examples
 
-Please refer to [the examples directory](https://github.com/voidvoxel/callable/tree/channel/release/examples).
+* the [examples](examples/) directory
+* [voidvoxel.github.io](https://voidvoxel.github.io/examples/@voidvoxel/callable)
