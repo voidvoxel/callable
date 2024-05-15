@@ -18,4 +18,4 @@
 
 ## Source
 
-[src/FunctionDecorator.ts:4](https://github.com/voidvoxel/callable/blob/24c08769c30e952c0fb4c7cebff39e04faa6094c/src/FunctionDecorator.ts#L4)
+[src/FunctionDecorator.ts:4](https://github.com/voidvoxel/callable/blob/322669e7c28825425a48ae47506244891d3a5cde/src/FunctionDecorator.ts#L4)
