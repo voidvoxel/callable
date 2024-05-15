@@ -127,9 +127,3 @@ out
 
 # Build output
 build/
-
-# Distribution
-dist/
-
-# Documentation
-docs/
