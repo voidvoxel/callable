@@ -93,7 +93,7 @@ v1.0.0
 
 ###### Source
 
-[src/Callable.ts:242](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/Callable.ts#L242)
+[src/Callable.ts:242](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/Callable.ts#L242)
 
 #### Properties
 
@@ -348,7 +348,7 @@ v1.0.0
 
 ###### Source
 
-[src/Callable.ts:68](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/Callable.ts#L68)
+[src/Callable.ts:68](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/Callable.ts#L68)
 
 ***
 
@@ -390,7 +390,7 @@ v1.0.0
 
 ###### Source
 
-[src/Callable.ts:114](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/Callable.ts#L114)
+[src/Callable.ts:114](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/Callable.ts#L114)
 
 ***
 
@@ -426,7 +426,7 @@ v1.0.0
 
 ###### Source
 
-[src/Callable.ts:165](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/Callable.ts#L165)
+[src/Callable.ts:165](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/Callable.ts#L165)
 
 ***
 
@@ -468,7 +468,7 @@ v1.0.0
 
 ###### Source
 
-[src/Callable.ts:202](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/Callable.ts#L202)
+[src/Callable.ts:202](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/Callable.ts#L202)
 
 
 <a name="mdglobalsmd"></a>
@@ -517,7 +517,7 @@ The function name of the `Callable`.
 
 ###### Source
 
-[src/CallableOptions.ts:10](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/CallableOptions.ts#L10)
+[src/CallableOptions.ts:10](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/CallableOptions.ts#L10)
 
 
 <a name="mdinterfacesdecoratordescriptormd"></a>
@@ -538,7 +538,7 @@ The function name of the `Callable`.
 
 ###### Source
 
-[src/DecoratorDescriptor.ts:2](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/DecoratorDescriptor.ts#L2)
+[src/DecoratorDescriptor.ts:2](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/DecoratorDescriptor.ts#L2)
 
 ***
 
@@ -548,7 +548,7 @@ The function name of the `Callable`.
 
 ###### Source
 
-[src/DecoratorDescriptor.ts:3](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/DecoratorDescriptor.ts#L3)
+[src/DecoratorDescriptor.ts:3](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/DecoratorDescriptor.ts#L3)
 
 ## Type Aliases
 
@@ -575,4 +575,4 @@ The function name of the `Callable`.
 
 #### Source
 
-[src/FunctionDecorator.ts:4](https://github.com/voidvoxel/callable/blob/a94829f9495546385e94c35bc4d48ef76860a86c/src/FunctionDecorator.ts#L4)
+[src/FunctionDecorator.ts:4](https://github.com/voidvoxel/callable/blob/3fa6001f239aa3c91e7ce47289a1bcc529abbc1b/src/FunctionDecorator.ts#L4)
