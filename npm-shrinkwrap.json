@@ -1,12 +1,12 @@
 {
   "name": "@voidvoxel/callable",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
       "name": "@voidvoxel/callable",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "license": "MPL-2.0",
       "dependencies": {
         "nearley": "github:voidvoxel/nearley#hotfix/648-xss-vulnerability-fix"
